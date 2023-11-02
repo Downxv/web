@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 流式布局 */
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    ;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+.section {
+    width: 100%;
+    max-width: 980px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.section div {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.section::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.section div:first-child {
+    background-color: red;
+}
+
+.section div:last-child {
+    background-color: blue;
+}
+
+/* background-size: 图片宽度 图片高度
+   background-size：cover;  / contain
+*/
+/* flex布局
+    display:flex;
+*/
+.flex {
+    width: 800px;
+    height: 300px;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* 单行 */
+    /* align-items: center; */
+    /* 多行 */
+    /* align-content: center; */
+    /* flex-flow: column wrap; */
+}
+
+.flex span {
+    width: 150px;
+    height: 100px;
+    background-color: purple;
+    flex: 1;
+}
+
+.flex span:first-child {
+    align-self: flex-end;
+    order: 2;
+}
+
+/* rem设配布局 */
+html {
+    font-size: 14px;
+}
+
+/* 相对于html字体大小 */
+.rem {
+    width: 20rem;
+    height: 20rem;
+    background-color: red;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 800px) {
+    body {
+        background-color: blue;
+    }
+}
