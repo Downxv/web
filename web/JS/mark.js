@@ -216,6 +216,90 @@ t.onclick = function () {
     // input.checked = true
     // input.selected = true
     // input.disabled = true
+	// input.focus()
     // this.innerText = "调用"
+	// this.id = "s"
     this.style.backgroundColor = "#cf0"
+	// this.className = "ca cb"
+	// this.getAttribute("a1")
+	// this.setAttribute("a2", "q")
+	// H5规定自定义属性以data-开头
+	// div.dataset 包含了以data-开头的所有属性的集合
+	console.log(this.dataset.index)
+	console.log(this.dataset["index"])
+	console.log(this.dataset)
+	console.log(this.dataset.listName)
+	// 节点操作
+	console.log(tt[0].parentNode)
+	let xx = document.getElementsByTagName("ul")[0].childNodes
+	// nodeType为1是元素节点，3是文本节点 不提倡使用childNodes
+	console.log(xx[0].nodeName+"-"+xx[0].nodeType+"-"+xx[0].nodeValue)
+	// 提倡使用children
+	let yy = document.getElementsByTagName("ul")[0]
+	console.log(yy.children)
+	console.log(yy.children[yy.children.length-1])
+	console.log(yy.firstElementChild)
+	console.log(yy.lastElementChild)
+	console.log(this.nextElementSibling)
+	console.log(this.previousElementSibling)
+	let zz = document.createElement("li")
+	zz.innerText = "3"
+	let ww = document.createElement("li")
+	ww.innerText = "4"
+	yy.appendChild(zz)
+	yy.insertBefore(ww, yy.children[0])
+	// this.removeChild(this.children[0])
+	// let vv = this.cloneNode(true) 复制元素
+	// 方法监听注册事件
+	ww.addEventListener("click", function(){
+		ww.style.color = "#cf0"
+	})
+	// 解绑事件
+	// ww.onclick = null
+	// ww.removeEventListener("click", fn)
+	// 事件对象event
+	// zz.addEventListener("click", function(event){
+			// e.target 是被点击的元素
+	// })
+	// 阻止事件冒泡
+	// ww.addEventListener("click", function(e){
+		// e.stopPropagation()
+	// })
+	// 鼠标事件
+	zz.addEventListener("click", function(e){
+		console.log(e.clientX)
+		console.log(e.clientY)
+		console.log(e.pageX)
+		console.log(e.pageY)
+		console.log(e.screenX)
+		console.log(e.screenY)
+	})
+	// 键盘事件
+	// onkeyup onkeydown onkeypress e.keycode
+	// 页面加载完事件
+	window.onload = function(){}
+	window.addEventListener("load", function(){console.log("load")})
+	// dom加载完事件，除图片等
+	document.addEventListener("DOMContentLoaded", function(){})
+	// 窗口变化事件
+	window.addEventListener("resize", function(){
+		console.log(window.innerWidth)
+	})
+	// 定时器
+	let ss = window.setTimeout(function(){console.log('定时一秒')}, 1000)
+	// window.clearTimeout(ss)
+	let ii = window.setInterval(function(){
+		console.log("定时")
+	}, 2000)
+	// window.clearInterval(ii)
+	console.log(window.location.href)
+	// window.location.href = "www.baidu.com"
+	// window.location.assign("www.baidu.com") 跳转页面
+	// window.location.reload()
+	// window.history.back()
+	// window.history.forward()
+	console.log(this.offsetLeft + "-" + this.offsetTop)
+	console.log(this.offsetHeight + "-" + this.offsetWidth)
+	// this.offsetParent 返回带定位的父级元素
+	
 }
