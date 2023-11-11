@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 必须写 -->
+    <meta charset="UTF-8">
+    <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO优化 -->
+    <title>web笔记</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- favicon图标 -->
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="mark.css" />
+</head>
+
+<body>
+    <div class="tbody">
+        <div class="t3d"></div>
+        <!-- 标题标签 -->
+        <h1 id="title">标题一</h1>
+        <h2>标题二</h2>
+        <h3>标题三</h3>
+        <h4>标题四</h4>
+        <h5>标题五</h5>
+        <h6>标题六</h6>
+        <!--  -->
+        <!-- 段落标签 -->
+        <p>
+            1234567890
+            <br />
+            qwertyuiop
+        </p>
+        <p>
+            0987654321
+        </p>
+        <!--  -->
+        <!-- 文本格式化标签 -->
+        <strong>我是加粗的文字</strong>
+        <br />
+        <b>我也是加粗的文字</b>
+        <br />
+        <em>我是倾斜的文字</em>
+        <br />
+        <i>我也是倾斜的文字</i>
+        <br />
+        <del>我是删除线</del>
+        <br />
+        <s>我也是删除线</s>
+        <br />
+        <ins>我是下划线</ins>
+        <br />
+        <u>我也是下划线</u>
+        <!--  -->
+        <!-- 布局盒子 -->
+        <div>
+            这是div标签 独占一行
+        </div>
+        <div>
+            这是div标签 独占一行
+        </div>
+        <span></span>
+        <span></span>
+        <span>span标签</span>
+        <br />
+        <!--  -->
+        <!-- 图像标签 -->
+        <div class="pic"><img src="a.jpg" alt="图像未找到" title="图像的提示文本" width="500" /><span>登录</span></div>
+        <!--  -->
+        <!-- 链接标签 -->
+        <h4>外部链接</h4>
+        <a href="http://www.baidu.com" target="_self">百度</a>
+        <h4>内部链接</h4>
+        <a href="./a.jpg" target="_blank">本地图片</a>
+        <h4>空链接</h4>
+        <a href="#">无链接</a>
+		<h4>禁止跳转链接</h4>
+		<a href="javascript:;">不会跳转</a>
+        <h4>下载链接</h4>
+        <a href="a.zip">下载文件</a>
+        <h4>网页元素的链接</h4>
+        <a href="http://www.baidu.com"><img src="a.jpg" height="200" /></a>
+        <h4>锚点定位</h4>
+        <a href="#title">转到标题一</a>
+        <!--  -->
+        <!-- 表格标签 可用于布局 -->
+        <table align="center" border="1" cellpadding="1" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>数量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>计算机</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">跨行合并</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <!-- <td>计算机</td> -->
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td colspan="2">跨列合并</td>
+                    <!-- <td>20</td> -->
+                </tr>
+            </tbody>
+        </table>
+        <!--  -->
+        <!-- 列表标签 用于布局 -->
+        <!-- 无序列表 常用于布局 -->
+        <h4>无序列表</h4>
+        <ul>
+            <!-- ul里只能放li标签 -->
+            <li>苹果</li>
+            <li>香蕉</li>
+            <li>梨子</li>
+        </ul>
+        <!--  -->
+        <!-- 有序列表 -->
+        <h4>有序列表</h4>
+        <ol>
+            <!-- ol里只能放li标签 -->
+            <li>苹果</li>
+            <li>香蕉</li>
+            <li>梨子</li>
+        </ol>
+        <!--  -->
+        <!-- 自定义列表 用于布局-->
+        <dl>
+            <dt class="lis self">自定义列表</dt>
+            <dd id="apple">苹果</dd>
+            <dd>香蕉</dd>
+            <dd>梨子</dd>
+        </dl>
+        <!--  -->
+        <!-- 表单标签 -->
+        <form action="" method="post" name="">
+            <input type="text" name="" placeholder="请输入" maxlength="4" />
+            <input type="button" name="" value="input按钮" />
+            <input type="checkbox" name="" value="1" checked />
+            <input type="color" name="" />
+            <input type="date" name="" />
+            <input type="datetime" name="" />
+            <input type="datetime-local" name="" />
+            <input type="email" name="" />
+            <input type="file" name="" multiple="multiple" />
+            <input type="hidden" name="" />
+            <input type="image" name="" />
+            <input type="month" name="" />
+            <input type="number" name="" />
+            <input type="password" name="" />
+            <label for="test">label绑定input</label>
+            <input type="radio" name="" value="2" id="test" />
+            <input type="range" name="" />
+            <input type="reset" name="" />
+            <input type="search" name="" required autofocus autocomplete="off" />
+            <input type="submit" name="" />
+            <input type="tel" name="" />
+            <input type="time" name="" />
+            <input type="url" name="" />
+            <input type="week" name="" />
+            <span>下拉框</span>
+            <select name="">
+                <option value="">香蕉</option>
+                <option value="" selected>苹果</option>
+                <option value="">梨子</option>
+                <option value="">西瓜</option>
+            </select>
+            <span>多行文本框</span>
+            <textarea name="" placeholder="输入多行文本">
+        </textarea>
+        </form>
+        <!--  -->
+        <!-- 段落首行缩进 -->
+        <p>我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+        <div><button>按钮</button></div>
+        <!--  -->
+        <!-- <div class="box">s</div>
+        <div class="box">s</div>
+        <div class="box">s</div>
+        <div class="box">s</div>
+        <div class="box">s</div> -->
+        <!-- <div style="clear: both;"></div>  清除浮动，不常用-->
+        <div class="sanjiao"></div>
+        <div class="shengluehao">单行显示文本，多余的用省略号显示</div>
+        <div class="shengluehao2">多行文本溢出显示省略号，有兼容性问题，适用与webkit内核浏览器</div>
+    </div>
+    <!-- HTML5新增标签 -->
+    <header>头部</header>
+    <nav>
+        <i>导航栏标签</i>
+    </nav>
+    <article>1</article>
+    <section>2</section>
+    <aside>3</aside>
+    <footer>4</footer>
+    <audio></audio>
+    <video></video>
+    <!-- 转换 -->
+    <div class="trans"></div>
+    <!-- 动画 -->
+    <div class="ani"></div>
+</body>
+
+</html>
