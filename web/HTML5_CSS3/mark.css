@@ -170,7 +170,7 @@ p {
     /* overflow: hidden */
     border: 1px solid transparent;
     position: relative;
-    cursor: not-allowed;
+    cursor: not-allowed;  /*move*/
     /* 清除浮动 */
     /* overflow: hidden; */
     /* 透视 */

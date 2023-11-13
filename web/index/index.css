@@ -214,6 +214,10 @@ img {
     z-index: 1;
 }
 
+.right-b #guanggao {
+    transition: all 0.3s;
+}
+
 .cls-choose {
     position: absolute;
     top: 0;

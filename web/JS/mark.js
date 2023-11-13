@@ -301,5 +301,43 @@ t.onclick = function () {
 	console.log(this.offsetLeft + "-" + this.offsetTop)
 	console.log(this.offsetHeight + "-" + this.offsetWidth)
 	// this.offsetParent 返回带定位的父级元素
-	
+	console.log(this.clintLeft + "-" + this.clintTop)
+	console.log(this.clintHeight + "-" + this.clintWidth)
+	// 立即执行函数
+	// (function(){})()     (function(){}())
+	console.log(this.scrollHeight+"-"+this.scrollWidth)
+	console.log(this.scrollTop+"-"+this.scrollLeft)
+	// document.addEventListener("scroll", function(){
+			// console.log(window.pageYOffset, pageXOffset);
+	// })
+	// window.scroll(x, y)
+	// window.sessionStorage.setItem("key", "value")
+	// window.sessionStorage.getItem("key")
+	// window.sessionStorage.removeItem("key")
+	// window.sessionStorage.clear()
+	// window.localStorage.setItem("key", "value")
+	// window.localStorage.getItem("key")
+	// window.localStorage.removeItem("key")
+	// window.localStorage.clear()
+	// checkbox.onchange = function(){}
+
 }
+
+// es6
+let es
+const CT = 1  // 声明常量
+const TEAM = [1, 2, 3]
+let [one, two, there] = TEAM
+const OB = {
+	x: 1,
+	y: 2
+}
+let {xo, yt} = OB
+// 模板字符串
+let mb = `<ul>
+				<li></li>
+			</ul>${xo}`
+
+let ffn = (a, b) => {
+
+} 
